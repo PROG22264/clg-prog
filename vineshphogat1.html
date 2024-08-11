@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>CurrentDate</title>
+
+    <style>
+        body{
+            background:linear-gradient(to bottom left, #c6a1e4, #6405b3, #0357a6, #010c24);
+        }
+        nav{
+            background-color: #000;
+            box-shadow: 0px 5px 8px #0000007d;
+        }
+        .navlinks a{
+            color: #fff;
+            border-bottom: solid 2px #000000;;
+        }
+        .main{
+            margin-top: 60px;
+            margin-right: 385px;
+        }
+
+        .side-recomend{
+            margin-left: 870px;
+            margin-right: 0px; 
+            margin-top: 10px;
+            padding: 10px;
+            width: 350px;
+            height: 900px;
+            position: absolute;
+            border: 1px solid #ffffff;
+            border-radius: 10px;
+            background:linear-gradient(to bottom right, #ab61e8, #6405b3, #0357a6, #021642);
+            /* background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 20px;
+            border:1px solid rgba(255, 255, 255, 0.183);*/
+            box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.863); 
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .side-recomend h1{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           margin-top: -11px; 
+           margin-left: -10px;
+           border-top-right-radius: 15px;
+           border-top-left-radius: 15px;
+           color: rgb(255, 255, 255);
+           border-bottom: 1px solid #fff;
+           font-size: 20px;
+           width: 350px;
+           padding: 10px;
+           /* background-color: #000000; */
+           font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+ .side-recomend .content1{
+    background-color: #000000;
+    border-radius: 10px;
+    padding: 10px;
+    height: 400px;
+
+}
+ .side-recomend .side-recomend-img img{
+    margin-left:3px;
+    height: 190px;
+    width: 98%;
+    border-radius: 5px;
+}
+ .side-recomend .side-recomend-img h1{
+    display: flex;
+    margin-right: 20px;
+    margin-left: -20px;
+    color: #ffffff;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-bottom: none;
+}
+.side-recomend  .side-recomend-img p{
+    color: #fff;
+}
+.side-recomend  .side-recomend-img a{
+    margin-left: 120px;
+    width: 50px;
+    text-decoration: none;
+    background-color: crimson;
+    padding: 8px;
+    color:#000;
+    font-size: 15px;
+    border-radius: 6px;
+
+}
+.side-recomend .content2{
+    margin-top: 40px;
+    background-color: #000000;
+    border-radius: 10px;
+    padding: 10px;
+    height: 350px;
+}
+.side-recomend .side-recomend-img img{
+    margin-left:3px;
+    height: 190px;
+    width: 98%;
+    border-radius: 3px;
+}
+.side-recomend .side-recomend-img h1{
+    display: flex;
+    margin-right: 20px;
+    margin-left: -20px;
+    color: #ffffff;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-bottom: none;
+}
+.side-recomend .side-recomend-img p{
+    color: #fff;
+}
+.side-recomend .side-recomend-img a{
+    margin-left: 120px;
+    width: 50px;
+    text-decoration: none;
+    background-color: crimson;
+    padding: 8px;
+    color:#000;
+    font-size: 15px;
+    border-radius: 6px; 
+} 
+.side-recomend-bottom-link a{
+    display: flex;
+    margin-top: 14px;
+    margin-left: 95px;
+    width: 150px;
+    text-decoration: none;
+    /* background-color: rgb(0, 0, 0);  */
+    background:linear-gradient(to bottom left, #630aac, #490481, #06294a, #000000); 
+    /* border: 1px solid #838383; */
+    padding: 8px;
+    color:#ffffff;
+    font-size: 15px;
+    border-radius: 6px; 
+    transition: ease all 0.5s;
+    box-shadow: 0px 0px 7px 1px #ffffff;
+}
+.side-recomend-bottom-link a:hover{
+    transform: scale(1.090);
+    z-index: 2;
+}
+
+.category h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    font-weight: 150;
+    display: flex;
+    font-size: 30px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:#fff;
+    background-color: crimson;
+    border-radius: 8px;
+    margin-bottom: 10px; 
+    border-radius: 5px 5px 5px 5px;
+    padding: 6px;
+}
+        .img{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .img img{
+            border-radius: 5px;
+            margin-top: 10px;
+            height: 100%;
+            width:800px;
+        }
+        .main-title h1{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .main-news{
+            margin-top: 50px;
+            margin-right: 10px;
+            margin-left: 30px;
+        }
+        .main-news h3{
+            color:#fff;
+            /* background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 10px;
+            border:1px solid rgba(255, 255, 255, 0.183);
+            box-shadow:  0px 10px 20px 0px rgba(0, 0, 0, 0.863); */
+            background-color: #0000008e;
+            border-radius: 10px;
+            padding: 10px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .main-news p{
+            color:#ffffff;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .embade-twitter{
+            display: flex;
+            align-items: center;
+            justify-content: center; 
+            padding:20px;
+            margin-top: 20px;
+            backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(10px);
+border-radius: 20px;
+border:1px solid rgba(255, 255, 255, 0.183);
+box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.863);
+        }
+        .paragraph-2 p{
+            margin-bottom:100px;
+        }
+        .paragraph-2 h3{
+            margin-top: 50px;
+        }
+        .footer{
+            background-color: #000;
+        }
+        .footer .footerlogo h1{
+            color: #fff;
+            background-color: #000;
+        }
+        .footer p{
+            background-color: none;
+        }
+        .footer .footerlinks a{
+            color: #fff;
+            border-bottom: solid 2px#000;
+        }
+        .footer .social-links a{
+            background-color: none;
+        }
+        .footer .social-links i{
+            color: #fff;
+            /* background-color: #000000; */
+            background:linear-gradient(to bottom left, #c6a1e4, #6405b3, #0357a6, #021642);
+        }
+        .footer .social-links i:hover{
+            color: #000;
+            background-color: none;
+        }
+
+
+
+
+
+
+
+        .box {
+    height: 420px;
+    width: 345px;
+    background-color: #2f2f2f;
+    padding: 1.5px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden; 
+    z-index: 20;
+}
+
+.in {
+    height: 100%;
+    width: 100%;
+    background-color: #111;
+    border-radius: 10px;
+    position: relative;
+    z-index: 99;
+}
+
+/* box - after box - in */
+
+.box::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* set the box 45deg */
+    transform: translate(-50%, -50%) rotate(45deg);
+    height: 600px;
+    width: 200px;
+    background: #ffffff;
+    box-shadow: 0 0 20px rgb(255, 255, 255),
+    0 0 40px rgba(255, 255, 255, 0.902),
+    0 0 80px rgb(255, 255, 255);
+    animation: animate 2s linear infinite;
+}
+
+@keyframes animate {
+    100% {
+        transform: translate(-50%, -50%) rotate(225deg);
+        /* this translate set the box at the senter while rotate using roate() */
+    }
+}
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+    
+    <nav>
+
+        <div class="navmain">
+
+       <div class="logo">
+        <h1> Current</h1>
+        <h2>News</h2>
+       </div>
+
+       <div class="navlinks">
+       <a href="home.html">Home</a>
+       <a href="technology.html">Technology</a>
+       <a href="business.html">Business</a>
+       <a href="finance.html">Finance</a>
+       <a href="education.html">Education</a>
+       <a href="entertainment.html">Entertainment</a>
+       <a href="sports.html">Sports</a>
+       </div>
+
+       <div class="navsignup">
+        <a href="signup.html">SignUp</a> 
+       </div>
+
+       </div>
+    </nav>
+
+    <div class="main">
+        <!-- side recomend block -->
+        <div class="side-recomend">
+           <h1>Sports Related Posts</h1>
+
+           <div class="box">
+            <div class="in">
+           <div class="content1">
+
+            <!-- trending float -->
+            <div class="trending-float">
+                  <h1>Trending</h1>
+            </div>
+
+           <div class="side-recomend-img">
+              <img src="vinesh pgogat 1.webp" alt="">
+            <h1>Why Vinesh phogat is hospitalized?</h1>   
+            <p>
+                After getting disqualified from the olampics Vinesh Phogat got admited to the hospital, but...
+            </p>        
+            
+           <a href="vineshphogathospital.html">Read more</a>
+           </div>
+           </div>
+            
+           </div>
+           </div>
+
+        <div class="content2">
+            <div class="side-recomend-img">
+                <img src="vinesh pgogat 1.webp" alt="">
+              <h1>Why Vinesh phogat is hospitalized?</h1>   
+              <p>
+                  After getting disqualified from the olampics Vinesh Phogat got admited to the hospital, but...
+              </p>        
+    
+              <a href="vineshphogathospital.html">Read more</a>
+             </div>
+        </div>
+
+        <div class="side-recomend-bottom-link">
+            <a href="sports.html">Go to sports section</a>
+        </div>
+        </div>
+
+
+        <!-- <div class="side-ad2">
+            <h1>AD</h1>
+            <h2>Sponsered</h2>
+      </div> -->
+          
+          <!-- news main image -->
+          <div class="img">
+            <img src="vineshphogat3.jpg" alt="">
+          </div>
+            <!-- main title -->
+          <div class="main-title">
+            <h1>Why was Vinesh Phogat Disqualified from olampics ?</h1>
+          </div>
+             <!-- News story -->
+          <div class="main-news">
+
+            <div class="paragraph-1">
+            <h3>Main reason of disqualification!</h3>
+            <p>
+               <br> Vinesh Phogat was all set to compete for Gold at the Paris Olympics 2024 in the Women's Wrestling 50 kg category. She had already secured a Silver for India. In a shocking reversal of fortunes, Phogat will now return from Paris without any medal after being found overweight ahead of her women's 50kg final.<br> 
+                
+               <br> “She was found overweight by 100gm this morning. The rules do not allow this and she has been disqualified," an Indian coach told PTI.   </br>
+            
+               <br> "It is with regret that the Indian contingent shares news of Vinesh Phogat's disqualification from the women's Wrestling 50kg class. Despite the best efforts by the team through the night, she weighed in a few grams over 50kg this morning," the IOA stated.</br></p>
+               </div>
+
+               <div class="paragraph-2">
+               <h3>PM Modi supports Phogat after heartbreaking exit from Paris Olympics 2024!</h3>
+
+               <!-- twitter embeded post -->
+               <div class="embade-twitter">
+               <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Vinesh, you are a champion among champions! You are India&#39;s pride and an inspiration for each and every Indian. <br><br>Today&#39;s setback hurts. I wish words could express the sense of despair that I am experiencing.<br><br>At the same time, I know that you epitomise resilience. It has always…</p>&mdash; Narendra Modi (@narendramodi) <a href="https://twitter.com/narendramodi/status/1821083814363591059?ref_src=twsrc%5Etfw">August 7, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+               <p>
+
+               <br> Minutes after the confirmation of Vinesh Phogat's exit from the Paris Olympics 2024, Prime Minister Narendra Modi consoled the ace wrestler. </br>
+                
+               <br> “Vinesh, you are a champion among champions! You are India's pride and an inspiration for each and every Indian. Today's setback hurts. I wish words could express the sense of despair that I am experiencing. At the same time, I know that you epitomise resilience. It has always been your nature to take challenges head-on. Come back stronger! We are all rooting for you," read a post by Prime Minister Narendra Modi on X.<br></p>
+               </div>
+          </div>
+          
+    </div>
+
+
+
+
+    <div id="box">
+        <div id="in"></div>
+    </div>
+
+
+
+
+              <!-- All footer sectioon -->
+    <footer>
+        <div class="footer">
+            <div class="footerlogo">
+             <h1>
+               Current
+             </h1>
+             <h2>
+               News
+             </h2>
+            </div>
+   
+             
+           <div class="footerlinks">
+               <a href="home.html">About Us</a>
+               <a href="technology.html">Contact Us</a>
+               <a href="business.html">Privacy Policy</a>
+               <a href="finance.html">Disclamer</a>
+               <a href="finance.html">Career</a>
+               </div>
+   
+               <div class="social-links">
+                <a href="https://www.instagram.com/currentday24/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.instagram.com/currentday24/"><i class="fa-brands fa-telegram"></i></a>
+                <a href="https://www.instagram.com/currentday24/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/currentday24/"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+   
+               <p> Copyright © 2024 CurrentNews </p>
+        </div>
+       </footer>
+   
+   
+   </body>
+   </html>
